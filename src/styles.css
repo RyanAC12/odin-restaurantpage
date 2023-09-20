@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Jost:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&family=Skranji&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Skranji", Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url(/src/Images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(5px);
+    scale: 1.2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-image: linear-gradient(to top, rgba(147, 226, 127, 0.555), rgb(82, 207, 138));
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(73, 131, 60);;
+}
+
+.header button {
+    border: 2px solid black;
+    height: 2rem;
+    width: auto;
+    border-radius: 5px;
+    background-color: rgb(116, 240, 182);
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#bmo, #house {
+    width: auto;
+    height: 300px;
+}
+
+#clock {
+    width: auto;
+    height: 200px;
+}
+
+.chef, .description, .hours {
+    width: 25%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
