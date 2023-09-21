@@ -1,5 +1,6 @@
 function loadHome() {
     const content = document.getElementById('content');
+    content.innerHTML = '';
 
      // Header
      const header = document.createElement('header');
@@ -14,26 +15,26 @@ function loadHome() {
  
      const homeDiv = document.createElement('div');
      homeDiv.classList.add('home');
-     const homeButton = document.createElement('button');
-     homeButton.id = 'homebtn';
-     homeButton.textContent = 'Home';
-     homeDiv.appendChild(homeButton);
+     const homeBtn = document.createElement('button');
+     homeBtn.id = 'homebtn';
+     homeBtn.textContent = 'Home';
+     homeDiv.appendChild(homeBtn);
      menu.appendChild(homeDiv);
  
      const menuDiv = document.createElement('div');
      menuDiv.classList.add('menu');
-     const menuButton = document.createElement('button');
-     menuButton.id = 'menubtn';
-     menuButton.textContent = 'Menu';
-     menuDiv.appendChild(menuButton);
+     const menuBtn = document.createElement('button');
+     menuBtn.id = 'menubtn';
+     menuBtn.textContent = 'Menu';
+     menuDiv.appendChild(menuBtn);
      menu.appendChild(menuDiv);
  
      const contactDiv = document.createElement('div');
      contactDiv.classList.add('contact');
-     const contactButton = document.createElement('button');
-     contactButton.id = 'contactbtn';
-     contactButton.textContent = 'Contact';
-     contactDiv.appendChild(contactButton);
+     const contactBtn = document.createElement('button');
+     contactBtn.id = 'contactbtn';
+     contactBtn.textContent = 'Contact';
+     contactDiv.appendChild(contactBtn);
      menu.appendChild(contactDiv);
  
      header.appendChild(menu);
@@ -52,7 +53,7 @@ function loadHome() {
      chefDiv.appendChild(chefImage);
      const chefText = document.createElement('p');
      chefText.textContent = `All of our meals are cooked personally by chef 
-     BMO himself! Having studied tirelessly at a top culinary academy, 
+     BMO himself! ... with some help from Jake. Having studied tirelessly at a top culinary academy, 
      BMO will make sure to wow you with his savory dishes!`;
      chefDiv.appendChild(chefText);
      main.appendChild(chefDiv);
