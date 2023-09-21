@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Jost:wght@500&family=Poppins:wght@500&family=Roboto:wght@500&family=Skranji&display=swap');
 
+/*Main styles and Home*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -57,6 +59,7 @@ body::before {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    width: 25%;
 }
 
 .main {
@@ -86,4 +89,136 @@ body::before {
     align-items: center;
     text-align: center;
     padding: 1rem;
+}
+
+/*Menu*/
+
+.bmocake {
+    position: absolute;
+    left: 270px;
+    top: 350px;
+    text-align: center;
+}
+
+#bmocake {
+    width: auto;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.baconpancakes {
+    position: absolute;
+    left: 780px;
+    top: 200px;
+    text-align: center;
+}
+
+#baconpancakes {
+    width: auto;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.perfectsandwich {
+    position: absolute;
+    left: 1180px;
+    top: 370px;
+    text-align: center;
+}
+
+#perfectsandwich {
+    width: auto;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.bmocake h2, .baconpancakes h2, .perfectsandwich h2 {
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 10px;
+}
+
+/*Contact*/
+
+.contactmain {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactus {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#phone {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 150px;
+}
+
+#phone2 {
+    position: absolute;
+    width: auto;
+    height: 400px;
+    right: 150px;
+    top: 134px;
+}
+
+/*Interactivity*/
+
+button {
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: rgb(74, 233, 159);
+    transition: 0.2s;
+}
+
+button:active {
+    background-color: rgb(74, 233, 159);
+    scale: 0.95;
+    transition: 0.2s;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.chef, .description, .hours {
+    transition: 0.5s;
+}
+
+.chef:hover, .description:hover, .hours:hover {
+    transition: 0.5s;
+    scale: 1.05;
+}
+
+#bmocake, #baconpancakes, #perfectsandwich {
+    transition: 0.5s;
+}
+
+#bmocake:hover, #baconpancakes:hover, #perfectsandwich:hover {
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 20px white);
+}
+
+.bmocake p, .baconpancakes p, .perfectsandwich p {
+    transition: 0.5s;
+}
+
+.bmocake:hover p, .baconpancakes:hover p, .perfectsandwich:hover p {
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 5px white);
 }
